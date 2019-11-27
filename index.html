@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab#1</title>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+	<div class="wrapper">
+	
+		<header>Header</header>
+		<style>
+			* {
+			margin: 0;
+			padding: 0;
+			}
+			html,
+			body {
+				height: 100%;
+				max-width:1200px;
+				position:center;
+				margin: auto;
+			}
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				min-height: 100%;
+			}
+
+			header{
+				background-color: #00FFFF;
+				height:50px;
+			}
+			.content {
+				flex: 1 0 auto;
+				background-color: #FF4500;
+				display:flex;
+				flex-wrap: wrap;
+				word-wrap: break-word;
+			}
+
+			.menu{
+				background-color: #4682B4;
+				flex: 1;
+				display:flex;
+				flex-flow: column wrap;
+			}
+
+			.menu-item{
+				background-color: #FFFF00;
+				margin: 2px;
+				word-wrap: break-word;
+				height: 25px;
+			}
+
+
+			.text-content{
+				flex: 4;
+			}
+
+			.cube{
+				width:100px;
+				height:100px;
+				background-color:#008B8B;
+				position:absolute;
+				opacity: 0.5;
+				left:60%;
+				margin-left:-50px;
+				top:50%;
+				margin-top:-50px;
+			}
+
+			footer {
+				flex: 0 0 auto;
+				background-color: #FFFF00;
+				display:flex;
+				flex-wrap: wrap;
+			}
+
+			.footer-box-1{
+				background-color: #2E8B57;
+				min-height:50px;
+				flex: 1;
+			}
+
+			.footer-box-2{
+				background-color: #3CB371;
+				min-height:50px;
+				flex: 1;
+			}
+
+			.footer-box-3{
+				background-color: #00FF7F;
+				min-height:50px;
+				flex: 1;
+			}
+
+			a{
+				margin: 2px;
+				text-decoration: none;
+				border:1px solid black;
+				max-height: 25px;
+				background-color: #FFFF00;
+				word-wrap: break-word;
+				flex:1;
+			}
+
+			@media screen and (max-width: 768px) {
+				.content {
+					flex: 1 0 auto;
+					background-color: #FF4500;
+					display:flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+					word-wrap: break-word;
+				}
+				
+				.menu{
+					background-color: #4682B4;
+					flex: 1;
+					max-height:30px;
+					display:flex;
+					flex-flow: row wrap;
+					justify-content: space-around;
+					align-item: center;
+				}
+				
+				.menu-item{
+					background-color: #FFFF00;
+					margin: 2px;
+					word-wrap: break-word;
+					max-height: 25px;
+					flex:1;
+					text-align:center;
+				}
+				
+				a{
+					margin: 2px;
+					text-decoration: none;
+					border:1px solid black;
+					height: 25px;
+					background-color: #FFFF00;
+					word-wrap: break-word;
+					flex:1;
+					text-align:center;
+				}
+				
+				.cube{
+					left:50%;
+					margin-left:-50px;
+					margin-top:-80px;
+				}
+				
+				footer {
+					flex: 0 0 auto;
+					background-color: #FFFF00;
+					display:flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+				}
+			}
+		</style>
+		<div class="content">
+			<div class="menu">
+				<a href=#>Пункт 1</a>
+				<a href=#>Пункт 2</a>
+				<a href=#>Пункт 3</a>
+				<a href=#>Пункт 4</a>
+				<a href=#>Пункт 5</a>
+				<a href=#>Пункт 6</a>
+				<a href=#>Пункт 7</a>
+			</div>
+			
+			<div class="text-content">
+				<div class="cube"></div>
+				<p>Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент 
+				Контент контент контент Контент контент контент</p><br>
+				
+				<p>Контент контент контент Контент контент контент Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент Контент контент контент Контент контент контент
+				Контент контент контент Контент контент контент Контент контент контент Контент контент контент</p><br>
+				
+			</div>
+		
+		</div>
+
+		<footer>
+			<div class="footer-box-1">Box-1</div>
+			<div class="footer-box-2">Box-2</div>
+			<div class="footer-box-3">Box-3</div>
+		</footer>
+	
+	</div>
+  </body>
+</html>
